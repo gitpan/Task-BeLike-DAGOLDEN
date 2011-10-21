@@ -1,0 +1,97 @@
+NAME
+    Task::BeLike::DAGOLDEN - DAGOLDEN's frequently-used or favorite modules
+
+VERSION
+    version 0.001
+
+TASK CONTENTS
+  Apps
+   App::Ack
+   App::cpanminus
+   App::grindperl
+   App::mymeta_requires
+   App::Nopaste
+  CLI tools
+   Daemon::Daemonize
+   Getopt::Lucid
+   Pod::Usage
+  Filesystem tools
+   File::Find::Rule
+   File::Find::Rule::Perl
+   File::Slurp
+   File::pushd
+   Path::Class
+   Path::Class::Rule
+  Testing Modules
+   Test::Deep
+   Test::Differences
+   Test::Fatal
+    Better than Test::Exception
+
+   Test::More 0.96
+    Version 0.96 required because: Minimally sane subtest()'s
+
+   Test::Routine
+    Better than Test::Class
+
+  Perl development tools
+   Archive::Tar
+   Archive::Tar::Wrapper
+   Archive::Zip
+   CPAN::DistnameInfo
+   CPAN::Mini
+   CPAN::Uploader
+   CPAN::Visitor
+   Data::Dump::Streamer
+   Devel::NYTProf
+   Dist::Zilla 4
+   Dist::Zilla::PluginBundle::DAGOLDEN 0.018
+   Module::Load::Conditional
+   Moose
+   Perl::Version
+   Pod::Strip
+   autodie
+   namespace::autoclean
+   version
+  Email tools
+   Email::MIME
+   Email::Sender
+   Email::Sender::Simple
+   Email::Simple
+   Email::Simple::Creator
+  Web tools
+   Bundle::LWP
+   LWP::Protocol::https
+   HTTP::Tiny
+   IO::Socket::SSL
+   URI
+   WWW::Mechanize
+  Data manipulation tools
+   Data::Stream::Bulk
+   JSON
+   JSON::XS
+   List::AllUtils
+   Regexp::Common
+   XML::RSS
+   XML::Simple
+   YAML
+  System interaction tools
+   Capture::Tiny
+   IO::CaptureOutput
+   IPC::Run3
+   IPC::System::Simple
+   Time::HiRes
+  Special-purpose tools
+   Git::Wrapper
+   Image::ExifTool
+   Net::GitHub::V2::Repositories
+AUTHOR
+    David Golden <dagolden@cpan.org>
+
+COPYRIGHT AND LICENSE
+    This software is Copyright (c) 2011 by David Golden.
+
+    This is free software, licensed under:
+
+      The Apache License, Version 2.0, January 2004
+
