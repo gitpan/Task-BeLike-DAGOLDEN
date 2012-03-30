@@ -2,7 +2,7 @@ NAME
     Task::BeLike::DAGOLDEN - DAGOLDEN's frequently-used or favorite modules
 
 VERSION
-    version 0.001
+    version 0.002
 
 TASK CONTENTS
   Apps
@@ -22,6 +22,9 @@ TASK CONTENTS
    File::pushd
    Path::Class
    Path::Class::Rule
+  Database Modules
+   DBI
+   DBD::SQLite
   Testing Modules
    Test::Deep
    Test::Differences
@@ -34,6 +37,12 @@ TASK CONTENTS
    Test::Routine
     Better than Test::Class
 
+   Test::Perl::Critic
+   Perl::Critic::Lax
+   Test::CPAN::Meta
+   Test::Pod::Coverage 1.08
+   Pod::Coverage::TrustPod
+   Test::Pod 1.41
   Perl development tools
    Archive::Tar
    Archive::Tar::Wrapper
@@ -85,6 +94,7 @@ TASK CONTENTS
    Git::Wrapper
    Image::ExifTool
    Net::GitHub::V2::Repositories
+   Vi::QuickFix
 AUTHOR
     David Golden <dagolden@cpan.org>
 

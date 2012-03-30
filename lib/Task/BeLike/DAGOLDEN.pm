@@ -3,7 +3,7 @@ use strict;
 use warnings;
 
 package Task::BeLike::DAGOLDEN;
-our $VERSION = '0.001'; # VERSION
+our $VERSION = '0.002'; # VERSION
 # ABSTRACT: DAGOLDEN's frequently-used or favorite modules
 
 
@@ -20,7 +20,7 @@ Task::BeLike::DAGOLDEN - DAGOLDEN's frequently-used or favorite modules
 
 =head1 VERSION
 
-version 0.001
+version 0.002
 
 =head1 TASK CONTENTS
 
@@ -58,6 +58,12 @@ version 0.001
 
 =head3 L<Path::Class::Rule>
 
+=head2 Database Modules
+
+=head3 L<DBI>
+
+=head3 L<DBD::SQLite>
+
 =head2 Testing Modules
 
 =head3 L<Test::Deep>
@@ -75,6 +81,18 @@ Version 0.96 required because: Minimally sane subtest()'s
 =head3 L<Test::Routine>
 
 Better than Test::Class
+
+=head3 L<Test::Perl::Critic>
+
+=head3 L<Perl::Critic::Lax>
+
+=head3 L<Test::CPAN::Meta>
+
+=head3 L<Test::Pod::Coverage> 1.08
+
+=head3 L<Pod::Coverage::TrustPod>
+
+=head3 L<Test::Pod> 1.41
 
 =head2 Perl development tools
 
@@ -177,6 +195,8 @@ Better than Test::Class
 =head3 L<Image::ExifTool>
 
 =head3 L<Net::GitHub::V2::Repositories>
+
+=head3 L<Vi::QuickFix>
 
 =head1 AUTHOR
 

@@ -11,6 +11,8 @@ lib/Task/BeLike/DAGOLDEN.pm
 perlcritic.rc
 t/00-compile.t
 t/task-bogus.t
+xt/author/critic.t
+xt/author/pod-spell.t
 xt/release/distmeta.t
 xt/release/pod-coverage.t
 xt/release/pod-syntax.t
