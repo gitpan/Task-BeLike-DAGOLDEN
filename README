@@ -2,15 +2,19 @@ NAME
     Task::BeLike::DAGOLDEN - DAGOLDEN's frequently-used or favorite modules
 
 VERSION
-    version 0.002
+    version 0.003
 
 TASK CONTENTS
   Apps
    App::Ack
    App::cpanminus
+   App::ForkProve
    App::grindperl
    App::mymeta_requires
    App::Nopaste
+   App::Uni
+   Code::TidyAll
+   Pantry
   CLI tools
    Daemon::Daemonize
    Getopt::Lucid
@@ -22,6 +26,7 @@ TASK CONTENTS
    File::pushd
    Path::Class
    Path::Class::Rule
+   Path::Iterator::Rule
   Database Modules
    DBI
    DBD::SQLite
@@ -52,6 +57,7 @@ TASK CONTENTS
    CPAN::Uploader
    CPAN::Visitor
    Data::Dump::Streamer
+   Devel::Cover
    Devel::NYTProf
    Dist::Zilla 4
    Dist::Zilla::PluginBundle::DAGOLDEN 0.018
@@ -73,14 +79,17 @@ TASK CONTENTS
    LWP::Protocol::https
    HTTP::Tiny
    IO::Socket::SSL
+   Plack
    URI
    WWW::Mechanize
   Data manipulation tools
+   Const::Fast
    Data::Stream::Bulk
    JSON
    JSON::XS
    List::AllUtils
    Regexp::Common
+   Syntax::Keyword::Junction
    XML::RSS
    XML::Simple
    YAML
@@ -93,7 +102,7 @@ TASK CONTENTS
   Special-purpose tools
    Git::Wrapper
    Image::ExifTool
-   Net::GitHub::V2::Repositories
+   Net::GitHub::V3
    Vi::QuickFix
 AUTHOR
     David Golden <dagolden@cpan.org>

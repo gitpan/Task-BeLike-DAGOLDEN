@@ -3,8 +3,9 @@ use strict;
 use warnings;
 
 package Task::BeLike::DAGOLDEN;
-our $VERSION = '0.002'; # VERSION
+our $VERSION = '0.003'; # VERSION
 # ABSTRACT: DAGOLDEN's frequently-used or favorite modules
+
 
 
 1;
@@ -12,6 +13,7 @@ our $VERSION = '0.002'; # VERSION
 # vim: ts=2 sts=2 sw=2 et:
 
 __END__
+
 =pod
 
 =head1 NAME
@@ -20,7 +22,7 @@ Task::BeLike::DAGOLDEN - DAGOLDEN's frequently-used or favorite modules
 
 =head1 VERSION
 
-version 0.002
+version 0.003
 
 =head1 TASK CONTENTS
 
@@ -30,11 +32,19 @@ version 0.002
 
 =head3 L<App::cpanminus>
 
+=head3 L<App::ForkProve>
+
 =head3 L<App::grindperl>
 
 =head3 L<App::mymeta_requires>
 
 =head3 L<App::Nopaste>
+
+=head3 L<App::Uni>
+
+=head3 L<Code::TidyAll>
+
+=head3 L<Pantry>
 
 =head2 CLI tools
 
@@ -57,6 +67,8 @@ version 0.002
 =head3 L<Path::Class>
 
 =head3 L<Path::Class::Rule>
+
+=head3 L<Path::Iterator::Rule>
 
 =head2 Database Modules
 
@@ -112,6 +124,8 @@ Better than Test::Class
 
 =head3 L<Data::Dump::Streamer>
 
+=head3 L<Devel::Cover>
+
 =head3 L<Devel::NYTProf>
 
 =head3 L<Dist::Zilla> 4
@@ -154,11 +168,15 @@ Better than Test::Class
 
 =head3 L<IO::Socket::SSL>
 
+=head3 L<Plack>
+
 =head3 L<URI>
 
 =head3 L<WWW::Mechanize>
 
 =head2 Data manipulation tools
+
+=head3 L<Const::Fast>
 
 =head3 L<Data::Stream::Bulk>
 
@@ -169,6 +187,8 @@ Better than Test::Class
 =head3 L<List::AllUtils>
 
 =head3 L<Regexp::Common>
+
+=head3 L<Syntax::Keyword::Junction>
 
 =head3 L<XML::RSS>
 
@@ -194,7 +214,7 @@ Better than Test::Class
 
 =head3 L<Image::ExifTool>
 
-=head3 L<Net::GitHub::V2::Repositories>
+=head3 L<Net::GitHub::V3>
 
 =head3 L<Vi::QuickFix>
 
@@ -211,4 +231,3 @@ This is free software, licensed under:
   The Apache License, Version 2.0, January 2004
 
 =cut
-
