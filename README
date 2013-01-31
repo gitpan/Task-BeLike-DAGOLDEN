@@ -2,7 +2,7 @@ NAME
     Task::BeLike::DAGOLDEN - DAGOLDEN's frequently-used or favorite modules
 
 VERSION
-    version 0.003
+    version 0.004
 
 TASK CONTENTS
   Apps
@@ -27,6 +27,7 @@ TASK CONTENTS
    Path::Class
    Path::Class::Rule
    Path::Iterator::Rule
+   Path::Tiny
   Database Modules
    DBI
    DBD::SQLite
@@ -62,12 +63,15 @@ TASK CONTENTS
    Dist::Zilla 4
    Dist::Zilla::PluginBundle::DAGOLDEN 0.018
    Module::Load::Conditional
-   Moose
    Perl::Version
    Pod::Strip
    autodie
    namespace::autoclean
    version
+  Moose
+   Moose
+   MooseX::Types
+   MooseX::Types::Path::Tiny
   Email tools
    Email::MIME
    Email::Sender

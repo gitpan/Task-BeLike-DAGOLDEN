@@ -3,7 +3,7 @@ use strict;
 use warnings;
 
 package Task::BeLike::DAGOLDEN;
-our $VERSION = '0.003'; # VERSION
+our $VERSION = '0.004'; # VERSION
 # ABSTRACT: DAGOLDEN's frequently-used or favorite modules
 
 
@@ -22,7 +22,7 @@ Task::BeLike::DAGOLDEN - DAGOLDEN's frequently-used or favorite modules
 
 =head1 VERSION
 
-version 0.003
+version 0.004
 
 =head1 TASK CONTENTS
 
@@ -69,6 +69,8 @@ version 0.003
 =head3 L<Path::Class::Rule>
 
 =head3 L<Path::Iterator::Rule>
+
+=head3 L<Path::Tiny>
 
 =head2 Database Modules
 
@@ -134,8 +136,6 @@ Better than Test::Class
 
 =head3 L<Module::Load::Conditional>
 
-=head3 L<Moose>
-
 =head3 L<Perl::Version>
 
 =head3 L<Pod::Strip>
@@ -145,6 +145,14 @@ Better than Test::Class
 =head3 L<namespace::autoclean>
 
 =head3 L<version>
+
+=head2 Moose
+
+=head3 L<Moose>
+
+=head3 L<MooseX::Types>
+
+=head3 L<MooseX::Types::Path::Tiny>
 
 =head2 Email tools
 

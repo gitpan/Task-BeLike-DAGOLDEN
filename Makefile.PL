@@ -74,11 +74,14 @@ my %WriteMakefileArgs = (
     "List::AllUtils" => 0,
     "Module::Load::Conditional" => 0,
     "Moose" => 0,
+    "MooseX::Types" => 0,
+    "MooseX::Types::Path::Tiny" => 0,
     "Net::GitHub::V3" => 0,
     "Pantry" => 0,
     "Path::Class" => 0,
     "Path::Class::Rule" => 0,
     "Path::Iterator::Rule" => 0,
+    "Path::Tiny" => 0,
     "Perl::Critic::Lax" => 0,
     "Perl::Version" => 0,
     "Plack" => 0,
@@ -109,7 +112,7 @@ my %WriteMakefileArgs = (
     "version" => 0,
     "warnings" => 0
   },
-  "VERSION" => "0.003",
+  "VERSION" => "0.004",
   "test" => {
     "TESTS" => "t/*.t"
   }
