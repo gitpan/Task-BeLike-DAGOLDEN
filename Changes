@@ -1,5 +1,11 @@
 Revision history for Task-BeLike-DAGOLDEN
 
+0.005     2013-03-13 05:56:12 America/New_York
+
+    - Unicode::UTF8, Test::Roo, Test::FailWarnings, HTTP::CookieJar,
+      Mozilla::CA, autodie, Net::GitHub, Acme::require::case,
+      Benchmark::Forking and Dumbbench
+
 0.004     2013-01-31 11:25:14 America/New_York
 
     - create a Moose section

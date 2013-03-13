@@ -3,13 +3,16 @@ abstract: "DAGOLDEN's frequently-used or favorite modules"
 author:
   - 'David Golden <dagolden@cpan.org>'
 build_requires:
+  ExtUtils::MakeMaker: 0
   File::Find: 0
+  File::Spec::Functions: 0
   File::Temp: 0
+  List::Util: 0
   Test::More: 0
 configure_requires:
   ExtUtils::MakeMaker: 6.30
 dynamic_config: 0
-generated_by: 'Dist::Zilla version 4.300029, CPAN::Meta::Converter version 2.120921'
+generated_by: 'Dist::Zilla version 4.300030, CPAN::Meta::Converter version 2.120921'
 license: apache
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
@@ -26,8 +29,9 @@ no_index:
 provides:
   Task::BeLike::DAGOLDEN:
     file: lib/Task/BeLike/DAGOLDEN.pm
-    version: 0.004
+    version: 0.005
 requires:
+  Acme::require::case: 0
   App::Ack: 0
   App::ForkProve: 0
   App::Nopaste: 0
@@ -38,6 +42,7 @@ requires:
   Archive::Tar: 0
   Archive::Tar::Wrapper: 0
   Archive::Zip: 0
+  Benchmark::Forking: 0
   Bundle::LWP: 0
   CPAN::DistnameInfo: 0
   CPAN::Mini: 0
@@ -54,7 +59,8 @@ requires:
   Devel::Cover: 0
   Devel::NYTProf: 0
   Dist::Zilla: 4
-  Dist::Zilla::PluginBundle::DAGOLDEN: 0.018
+  Dist::Zilla::PluginBundle::DAGOLDEN: 0.043
+  Dumbbench: 0
   Email::MIME: 0
   Email::Sender: 0
   Email::Sender::Simple: 0
@@ -66,6 +72,7 @@ requires:
   File::pushd: 0
   Getopt::Lucid: 0
   Git::Wrapper: 0
+  HTTP::CookieJar: 0
   HTTP::Tiny: 0
   IO::CaptureOutput: 0
   IO::Socket::SSL: 0
@@ -80,7 +87,8 @@ requires:
   Moose: 0
   MooseX::Types: 0
   MooseX::Types::Path::Tiny: 0
-  Net::GitHub::V3: 0
+  Mozilla::CA: 0
+  Net::GitHub: 0
   Pantry: 0
   Path::Class: 0
   Path::Class::Rule: 0
@@ -97,14 +105,17 @@ requires:
   Test::CPAN::Meta: 0
   Test::Deep: 0
   Test::Differences: 0
+  Test::FailWarnings: 0
   Test::Fatal: 0
   Test::More: 0.96
   Test::Perl::Critic: 0
   Test::Pod: 1.41
   Test::Pod::Coverage: 1.08
+  Test::Roo: 0
   Test::Routine: 0
   Time::HiRes: 0
   URI: 0
+  Unicode::UTF8: 0
   Vi::QuickFix: 0
   WWW::Mechanize: 0
   XML::RSS: 0
@@ -120,4 +131,4 @@ resources:
   bugtracker: https://rt.cpan.org/Public/Dist/Display.html?Name=Task-BeLike-DAGOLDEN
   homepage: https://metacpan.org/release/Task-BeLike-DAGOLDEN
   repository: git://github.com/dagolden/task-belike-dagolden.git
-version: 0.004
+version: 0.005

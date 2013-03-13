@@ -3,7 +3,7 @@ use strict;
 use warnings;
 
 package Task::BeLike::DAGOLDEN;
-our $VERSION = '0.004'; # VERSION
+our $VERSION = '0.005'; # VERSION
 # ABSTRACT: DAGOLDEN's frequently-used or favorite modules
 
 
@@ -22,7 +22,7 @@ Task::BeLike::DAGOLDEN - DAGOLDEN's frequently-used or favorite modules
 
 =head1 VERSION
 
-version 0.004
+version 0.005
 
 =head1 TASK CONTENTS
 
@@ -72,6 +72,8 @@ version 0.004
 
 =head3 L<Path::Tiny>
 
+=head3 L<Unicode::UTF8>
+
 =head2 Database Modules
 
 =head3 L<DBI>
@@ -94,7 +96,7 @@ Version 0.96 required because: Minimally sane subtest()'s
 
 =head3 L<Test::Routine>
 
-Better than Test::Class
+=head3 L<Test::Roo>
 
 =head3 L<Test::Perl::Critic>
 
@@ -108,13 +110,19 @@ Better than Test::Class
 
 =head3 L<Test::Pod> 1.41
 
+=head3 L<Test::FailWarnings>
+
 =head2 Perl development tools
+
+=head3 L<Acme::require::case>
 
 =head3 L<Archive::Tar>
 
 =head3 L<Archive::Tar::Wrapper>
 
 =head3 L<Archive::Zip>
+
+=head3 L<Benchmark::Forking>
 
 =head3 L<CPAN::DistnameInfo>
 
@@ -130,9 +138,11 @@ Better than Test::Class
 
 =head3 L<Devel::NYTProf>
 
+=head3 L<Dumbbench>
+
 =head3 L<Dist::Zilla> 4
 
-=head3 L<Dist::Zilla::PluginBundle::DAGOLDEN> 0.018
+=head3 L<Dist::Zilla::PluginBundle::DAGOLDEN> 0.043
 
 =head3 L<Module::Load::Conditional>
 
@@ -174,6 +184,10 @@ Better than Test::Class
 
 =head3 L<HTTP::Tiny>
 
+=head3 L<HTTP::CookieJar>
+
+=head3 L<Mozilla::CA>
+
 =head3 L<IO::Socket::SSL>
 
 =head3 L<Plack>
@@ -206,6 +220,8 @@ Better than Test::Class
 
 =head2 System interaction tools
 
+=head3 L<autodie>
+
 =head3 L<Capture::Tiny>
 
 =head3 L<IO::CaptureOutput>
@@ -222,7 +238,7 @@ Better than Test::Class
 
 =head3 L<Image::ExifTool>
 
-=head3 L<Net::GitHub::V3>
+=head3 L<Net::GitHub>
 
 =head3 L<Vi::QuickFix>
 

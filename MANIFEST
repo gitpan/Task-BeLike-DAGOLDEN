@@ -10,10 +10,12 @@ dist.ini
 lib/Task/BeLike/DAGOLDEN.pm
 perlcritic.rc
 t/00-compile.t
+t/00-report-prereqs.t
 t/task-bogus.t
 xt/author/critic.t
 xt/author/pod-spell.t
 xt/release/distmeta.t
+xt/release/minimum-version.t
 xt/release/pod-coverage.t
 xt/release/pod-syntax.t
 xt/release/portability.t
