@@ -73,7 +73,6 @@ my @modules = qw(
   MooseX::Types::Path::Tiny
   Mozilla::CA
   Net::GitHub
-  Pantry
   Path::Class
   Path::Class::Rule
   Path::Iterator::Rule
@@ -86,6 +85,7 @@ my @modules = qw(
   Pod::Usage
   Regexp::Common
   Syntax::Keyword::Junction
+  TAP::Harness::Restricted
   Test::CPAN::Meta
   Test::Deep
   Test::Differences
@@ -109,6 +109,7 @@ my @modules = qw(
   namespace::autoclean
   perl
   strict
+  superclass
   version
   warnings
 );

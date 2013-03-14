@@ -2,7 +2,7 @@ NAME
     Task::BeLike::DAGOLDEN - DAGOLDEN's frequently-used or favorite modules
 
 VERSION
-    version 0.005
+    version 0.006
 
 TASK CONTENTS
   Apps
@@ -14,7 +14,6 @@ TASK CONTENTS
    App::Nopaste
    App::Uni
    Code::TidyAll
-   Pantry
   CLI tools
    Daemon::Daemonize
    Getopt::Lucid
@@ -49,7 +48,8 @@ TASK CONTENTS
    Test::Pod::Coverage 1.08
    Pod::Coverage::TrustPod
    Test::Pod 1.41
-   Test::FailWarnings
+   Test::FailWarnings 0.003
+   TAP::Harness::Restricted
   Perl development tools
    Acme::require::case
    Archive::Tar
@@ -71,6 +71,7 @@ TASK CONTENTS
    Pod::Strip
    autodie
    namespace::autoclean
+   superclass
    version
   Moose
    Moose
