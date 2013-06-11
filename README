@@ -2,12 +2,11 @@ NAME
     Task::BeLike::DAGOLDEN - DAGOLDEN's frequently-used or favorite modules
 
 VERSION
-    version 0.006
+    version 0.007
 
 TASK CONTENTS
   Apps
    App::Ack
-   App::cpanminus
    App::ForkProve
    App::grindperl
    App::mymeta_requires
@@ -66,6 +65,7 @@ TASK CONTENTS
    Dumbbench
    Dist::Zilla 4
    Dist::Zilla::PluginBundle::DAGOLDEN 0.043
+   Dist::Zooky
    Module::Load::Conditional
    Perl::Version
    Pod::Strip
@@ -86,7 +86,7 @@ TASK CONTENTS
   Web tools
    Bundle::LWP
    LWP::Protocol::https
-   HTTP::Tiny
+   HTTP::Tiny 0.028
    HTTP::CookieJar
    Mozilla::CA
    IO::Socket::SSL

@@ -3,7 +3,7 @@ use strict;
 use warnings;
 
 package Task::BeLike::DAGOLDEN;
-our $VERSION = '0.006'; # VERSION
+our $VERSION = '0.007'; # VERSION
 # ABSTRACT: DAGOLDEN's frequently-used or favorite modules
 
 
@@ -22,15 +22,13 @@ Task::BeLike::DAGOLDEN - DAGOLDEN's frequently-used or favorite modules
 
 =head1 VERSION
 
-version 0.006
+version 0.007
 
 =head1 TASK CONTENTS
 
 =head2 Apps
 
 =head3 L<App::Ack>
-
-=head3 L<App::cpanminus>
 
 =head3 L<App::ForkProve>
 
@@ -144,6 +142,8 @@ Version 0.96 required because: Minimally sane subtest()'s
 
 =head3 L<Dist::Zilla::PluginBundle::DAGOLDEN> 0.043
 
+=head3 L<Dist::Zooky>
+
 =head3 L<Module::Load::Conditional>
 
 =head3 L<Perl::Version>
@@ -184,7 +184,7 @@ Version 0.96 required because: Minimally sane subtest()'s
 
 =head3 L<LWP::Protocol::https>
 
-=head3 L<HTTP::Tiny>
+=head3 L<HTTP::Tiny> 0.028
 
 =head3 L<HTTP::CookieJar>
 

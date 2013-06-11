@@ -11,14 +11,7 @@ use ExtUtils::MakeMaker 6.30;
 my %WriteMakefileArgs = (
   "ABSTRACT" => "DAGOLDEN's frequently-used or favorite modules",
   "AUTHOR" => "David Golden <dagolden\@cpan.org>",
-  "BUILD_REQUIRES" => {
-    "ExtUtils::MakeMaker" => 0,
-    "File::Find" => 0,
-    "File::Spec::Functions" => 0,
-    "File::Temp" => 0,
-    "List::Util" => 0,
-    "Test::More" => 0
-  },
+  "BUILD_REQUIRES" => {},
   "CONFIGURE_REQUIRES" => {
     "ExtUtils::MakeMaker" => "6.30"
   },
@@ -32,7 +25,6 @@ my %WriteMakefileArgs = (
     "App::ForkProve" => 0,
     "App::Nopaste" => 0,
     "App::Uni" => 0,
-    "App::cpanminus" => 0,
     "App::grindperl" => 0,
     "App::mymeta_requires" => 0,
     "Archive::Tar" => 0,
@@ -56,6 +48,7 @@ my %WriteMakefileArgs = (
     "Devel::NYTProf" => 0,
     "Dist::Zilla" => 4,
     "Dist::Zilla::PluginBundle::DAGOLDEN" => "0.043",
+    "Dist::Zooky" => 0,
     "Dumbbench" => 0,
     "Email::MIME" => 0,
     "Email::Sender" => 0,
@@ -69,7 +62,7 @@ my %WriteMakefileArgs = (
     "Getopt::Lucid" => 0,
     "Git::Wrapper" => 0,
     "HTTP::CookieJar" => 0,
-    "HTTP::Tiny" => 0,
+    "HTTP::Tiny" => "0.028",
     "IO::CaptureOutput" => 0,
     "IO::Socket::SSL" => 0,
     "IPC::Run3" => 0,
@@ -124,12 +117,33 @@ my %WriteMakefileArgs = (
     "version" => 0,
     "warnings" => 0
   },
-  "VERSION" => "0.006",
+  "TEST_REQUIRES" => {
+    "ExtUtils::MakeMaker" => 0,
+    "File::Find" => 0,
+    "File::Spec::Functions" => 0,
+    "File::Temp" => 0,
+    "List::Util" => 0,
+    "Test::More" => 0
+  },
+  "VERSION" => "0.007",
   "test" => {
     "TESTS" => "t/*.t"
   }
 );
 
+
+unless ( eval { ExtUtils::MakeMaker->VERSION(6.63_03) } ) {
+  my $tr = delete $WriteMakefileArgs{TEST_REQUIRES};
+  my $br = $WriteMakefileArgs{BUILD_REQUIRES};
+  for my $mod ( keys %$tr ) {
+    if ( exists $br->{$mod} ) {
+      $br->{$mod} = $tr->{$mod} if $tr->{$mod} > $br->{$mod};
+    }
+    else {
+      $br->{$mod} = $tr->{$mod};
+    }
+  }
+}
 
 unless ( eval { ExtUtils::MakeMaker->VERSION(6.56) } ) {
   my $br = delete $WriteMakefileArgs{BUILD_REQUIRES};

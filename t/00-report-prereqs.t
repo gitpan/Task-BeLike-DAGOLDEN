@@ -15,7 +15,6 @@ my @modules = qw(
   App::ForkProve
   App::Nopaste
   App::Uni
-  App::cpanminus
   App::grindperl
   App::mymeta_requires
   Archive::Tar
@@ -39,6 +38,7 @@ my @modules = qw(
   Devel::NYTProf
   Dist::Zilla
   Dist::Zilla::PluginBundle::DAGOLDEN
+  Dist::Zooky
   Dumbbench
   Email::MIME
   Email::Sender
