@@ -58,6 +58,7 @@ my @modules = qw(
   HTTP::CookieJar
   HTTP::Tiny
   IO::CaptureOutput
+  IO::Prompt::Tiny
   IO::Socket::SSL
   IPC::Run3
   IPC::System::Simple

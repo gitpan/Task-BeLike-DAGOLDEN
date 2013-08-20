@@ -2,7 +2,7 @@ NAME
     Task::BeLike::DAGOLDEN - DAGOLDEN's frequently-used or favorite modules
 
 VERSION
-    version 0.007
+    version 0.008
 
 TASK CONTENTS
   Apps
@@ -108,6 +108,7 @@ TASK CONTENTS
    autodie
    Capture::Tiny
    IO::CaptureOutput
+   IO::Prompt::Tiny
    IPC::Run3
    IPC::System::Simple
    Time::HiRes
