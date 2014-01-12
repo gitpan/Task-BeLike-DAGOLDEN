@@ -4,7 +4,7 @@
       "David Golden <dagolden@cpan.org>"
    ],
    "dynamic_config" : 0,
-   "generated_by" : "Dist::Zilla version 4.300035, CPAN::Meta::Converter version 2.132140",
+   "generated_by" : "Dist::Zilla version 5.010, CPAN::Meta::Converter version 2.133380",
    "license" : [
       "apache_2_0"
    ],
@@ -27,13 +27,20 @@
    "prereqs" : {
       "configure" : {
          "requires" : {
-            "ExtUtils::MakeMaker" : "6.30"
+            "ExtUtils::MakeMaker" : "6.17"
          }
       },
       "develop" : {
          "requires" : {
+            "Dist::Zilla" : "5.010",
+            "Dist::Zilla::PluginBundle::DAGOLDEN" : "0.018",
+            "File::Spec" : "0",
+            "File::Temp" : "0",
+            "IO::Handle" : "0",
+            "IPC::Open3" : "0",
             "Pod::Coverage::TrustPod" : "0",
             "Test::CPAN::Meta" : "0",
+            "Test::More" : "0",
             "Test::Pod" : "1.41",
             "Test::Pod::Coverage" : "1.08"
          }
@@ -62,7 +69,6 @@
             "DBD::SQLite" : "0",
             "DBI" : "0",
             "Daemon::Daemonize" : "0",
-            "Data::Dump::Streamer" : "0",
             "Data::Stream::Bulk" : "0",
             "Devel::Cover" : "0",
             "Devel::NYTProf" : "0",
@@ -141,36 +147,37 @@
          }
       },
       "test" : {
+         "recommends" : {
+            "CPAN::Meta" : "0",
+            "CPAN::Meta::Requirements" : "0"
+         },
          "requires" : {
             "ExtUtils::MakeMaker" : "0",
-            "File::Find" : "0",
             "File::Spec::Functions" : "0",
-            "File::Temp" : "0",
             "List::Util" : "0",
-            "Test::More" : "0"
+            "Test::More" : "0.96"
          }
       }
    },
    "provides" : {
       "Task::BeLike::DAGOLDEN" : {
          "file" : "lib/Task/BeLike/DAGOLDEN.pm",
-         "version" : "0.008"
+         "version" : "0.009"
       }
    },
    "release_status" : "stable",
    "resources" : {
       "bugtracker" : {
-         "mailto" : "bug-Task-BeLike-DAGOLDEN@rt.cpan.org",
-         "web" : "https://rt.cpan.org/Public/Dist/Display.html?Name=Task-BeLike-DAGOLDEN"
+         "web" : "https://github.com/dagolden/Task-BeLike-DAGOLDEN/issues"
       },
-      "homepage" : "https://metacpan.org/release/Task-BeLike-DAGOLDEN",
+      "homepage" : "https://github.com/dagolden/Task-BeLike-DAGOLDEN",
       "repository" : {
          "type" : "git",
-         "url" : "git://github.com/dagolden/task-belike-dagolden.git",
-         "web" : "https://github.com/dagolden/task-belike-dagolden"
+         "url" : "https://github.com/dagolden/Task-BeLike-DAGOLDEN.git",
+         "web" : "https://github.com/dagolden/Task-BeLike-DAGOLDEN"
       }
    },
-   "version" : "0.008",
+   "version" : "0.009",
    "x_authority" : "cpan:DAGOLDEN"
 }
 

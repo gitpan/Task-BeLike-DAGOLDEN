@@ -3,7 +3,7 @@ use strict;
 use warnings;
 
 package Task::BeLike::DAGOLDEN;
-our $VERSION = '0.008'; # VERSION
+our $VERSION = '0.009'; # VERSION
 # ABSTRACT: DAGOLDEN's frequently-used or favorite modules
 
 
@@ -16,13 +16,15 @@ __END__
 
 =pod
 
+=encoding UTF-8
+
 =head1 NAME
 
 Task::BeLike::DAGOLDEN - DAGOLDEN's frequently-used or favorite modules
 
 =head1 VERSION
 
-version 0.008
+version 0.009
 
 =head1 TASK CONTENTS
 
@@ -129,8 +131,6 @@ Version 0.96 required because: Minimally sane subtest()'s
 =head3 L<CPAN::Uploader>
 
 =head3 L<CPAN::Visitor>
-
-=head3 L<Data::Dump::Streamer>
 
 =head3 L<Devel::Cover>
 
